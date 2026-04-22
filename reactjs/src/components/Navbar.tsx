@@ -22,17 +22,22 @@ export default function Navbar() {
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 transition duration-500">
-                  <Link to="/">Home</Link>
-                  
-                    {navlinks.map((link: INavLink) => (
-                        <NavLink key={link.name} to={link.href} className="hover:text-pink-500 transition">
-                            {link.name}
-                        </NavLink>
-                    ))}
+                  <Link to="/" className="hover:text-pink-300 transition">
+                    Home
+                  </Link>
+                  <Link to="/generate" className="hover:text-pink-300 transition">
+                    My Generate
+                  </Link>
+                  <Link to="/my-generation" className="hover:text-pink-300 transition">
+                    My Generations
+                  </Link>
+                  <Link to="#" className="hover:text-pink-300 transition">
+                    Contact
+                  </Link>
                 </div>
 
                 <button className="hidden md:block px-6 py-2.5 bg-pink-600 hover:bg-pink-700 active:scale-95 transition-all rounded-full">
-                    Start free trial
+                    Get Started
                 </button>
                 <button onClick={() => setIsOpen(true)} className="md:hidden">
                     <MenuIcon size={26} className="active:scale-90 transition" />
