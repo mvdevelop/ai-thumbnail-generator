@@ -22,6 +22,8 @@ export default function Navbar() {
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 transition duration-500">
+                  <Link to="/">Home</Link>
+                  
                     {navlinks.map((link: INavLink) => (
                         <NavLink key={link.name} to={link.href} className="hover:text-pink-500 transition">
                             {link.name}
