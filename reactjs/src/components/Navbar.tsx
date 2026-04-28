@@ -32,8 +32,8 @@ export default function Navbar() {
                   <Link to="/my-generation" className="hover:text-pink-300 transition">
                     My Generations
                   </Link>
-                  <Link to="#" className="hover:text-pink-300 transition">
-                    Contact
+                  <Link to="/contact" className="hover:text-pink-300 transition">
+                    My Contact
                   </Link>
                 </div>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
                 <Link onClick={() => setIsOpen(false)} to='/'> Home</Link>
                 <Link onClick={() => setIsOpen(false)} to='/generate'>My Generate</Link>
                 <Link onClick={() => setIsOpen(false)} to='/my-generation'>My Generations</Link>
-                <Link onClick={() => setIsOpen(false)} to='#'>My Contact</Link>
+                <Link onClick={() => setIsOpen(false)} to='/contact'>My Contact</Link>
                 <Link onClick={() => setIsOpen(false)} to='/login'>Login</Link>
 
                 <button onClick={() => setIsOpen(false)} className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-pink-600 hover:bg-pink-700 transition text-white rounded-md flex">
