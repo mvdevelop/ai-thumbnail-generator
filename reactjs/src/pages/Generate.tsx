@@ -34,10 +34,27 @@ const Generate = () => {
                       <div className="space-y-2">
                         <label className="block text-sm font-medium">Title or Topic</label>
                         <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} maxLength={100} placeholder="e.g.m, 10 Tips for Better Sleep" className="w-full px-4 py-3 rounded-lg border border-white/12 bg-black/20 text-zinc-100 placeholder:text-zinc-400 foucus:outline-none focus:ring-2 focus:ring-pink-500" />
-                        <div>
-                          <span>{title.length}/100</span>
+                        <div className="flex justify-end">
+                          <span className="text-xs text-zinc-400 mb-4">{title.length}/100</span>
                         </div>
                       </div>
+
+                      {/* AspectRatioSelector */}
+                      <div className=""></div>
+
+                      {/* StyleSelector */}
+                      <div className=""></div>
+
+                      {/* ColorSchemeSelector */}
+                      <div className=""></div>
+
+                      {/* Details */}
+                      <div className='space-y-2'>
+                        <label>
+                          Additional Prompts <span className="">()</span>
+                        </label>
+                      </div>
+
                     </div>
                     
                     {/* BUTTON */}
