@@ -20,8 +20,9 @@ const AspectRatioSelector = ({ value, onChange } : { value: AspectRatio; onChang
           const selected = value === ratio;
 
           return (
-            <button>
-              {]}
+            <button key={ratio} type="button" onClick={() => onChange}>
+              {iconMap[ratio]}
+              <span className="tracking-widest">{ratio}</span>
             </button>
           )
         })}
