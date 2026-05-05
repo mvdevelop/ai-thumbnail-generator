@@ -53,6 +53,7 @@ const Generate = () => {
                         <label className="block text-sm font-medium">
                           Additional Prompts <span className="text-zinc-400 text-xs">(optional)</span>
                         </label>
+                        <textarea value={additionalDetails} onChange={(e) => setAdditionalDetails(e.target.value)} rows={3} placeholder="Add any specific elements, mood, or style preferences..." className="w-full px-4 rounded-lg border border-white/10 bg-white/6 text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-pink-500 resize-none mt-1 mb-4 py-4" />
                       </div>
 
                     </div>
