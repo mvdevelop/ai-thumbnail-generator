@@ -50,8 +50,8 @@ const Generate = () => {
 
                       {/* Details */}
                       <div className='space-y-2'>
-                        <label>
-                          Additional Prompts <span className="">()</span>
+                        <label className="block text-sm font-medium">
+                          Additional Prompts <span className="text-zinc-400 text-xs">(optional)</span>
                         </label>
                       </div>
 
