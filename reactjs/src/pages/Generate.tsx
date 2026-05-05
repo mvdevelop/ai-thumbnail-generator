@@ -5,6 +5,7 @@ import type { IThumbnail } from "../assets/assets";
 
 import SoftBackdrop from "../components/SoftBackdrop";
 import { button } from "motion/react-client";
+import AspectRatioSelector from "../components/AspectRatioSelector";
 
 const Generate = () => {
 
@@ -40,7 +41,7 @@ const Generate = () => {
                       </div>
 
                       {/* AspectRatioSelector */}
-                      <div className=""></div>
+                      <AspectRatioSelector />
 
                       {/* StyleSelector */}
                       <div className=""></div>
