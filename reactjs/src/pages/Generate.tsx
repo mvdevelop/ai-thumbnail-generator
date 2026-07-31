@@ -5,13 +5,14 @@ import SoftBackdrop from "../components/SoftBackdrop";
 import AspectRatioSelector from "../components/AspectRatioSelector";
 import StyleSelector from "../components/StyleSelector";
 import ColorSchemeSelector from "../components/ColorSchemeSelector";
+import { aspectRatios, type AspectRatio } from "../assets/assets";
 
 const Generate = () => {
   const { id } = useParams();
   const [title, setTitle] = useState("");
   const [additionalDetails, setAdditionalDetails] = useState("");
 
-  const [aspectRatio, setAspectRatio] = useState<typeof aspectRatios[number]>("16:9");
+  const [aspectRatio, setAspectRatio] = useState<AspectRatio>("16:9");
   const [style, setStyle] = useState<ThumbnailStyle>("Bold & Graphic");
   const [colorScheme, setColorScheme] = useState<ColorScheme>({ id: "vibrant", name: "Vibrant", colors: ["#FF6B6B", "#4ECDC4", "#45B7D1"] });
 
