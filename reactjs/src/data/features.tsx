@@ -1,4 +1,3 @@
-
 import type { IFeature } from "../types";
 
 export const featuresData: IFeature[] = [
